@@ -18,40 +18,4 @@ public class ProjectEntity {
 
     @OneToMany
     private List<TaskStateEntity> taskStateEntityList;
-
-
-    public ProjectEntity() {
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public Instant getCreatedAt() {
-        return createdAt;
-    }
-
-    public void setCreatedAt(Instant createdAt) {
-        this.createdAt = createdAt;
-    }
-
-    public List<TaskStateEntity> getTaskStateEntityList() {
-        return taskStateEntityList;
-    }
-
-    public void setTaskStateEntityList(List<TaskStateEntity> taskStateEntityList) {
-        this.taskStateEntityList = taskStateEntityList;
-    }
 }

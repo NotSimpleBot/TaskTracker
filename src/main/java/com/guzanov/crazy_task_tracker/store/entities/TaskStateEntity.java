@@ -20,5 +20,4 @@ public class TaskStateEntity {
 
     @OneToMany
     private List<TaskEntity> taskEntityList;
-
 }
