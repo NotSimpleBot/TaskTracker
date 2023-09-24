@@ -1,18 +1,27 @@
 package com.guzanov.crazy_task_tracker.store.entities;
 
+import lombok.*;
+import lombok.experimental.FieldDefaults;
+
 import javax.persistence.*;
 import java.time.Instant;
 
+@Getter
+@Setter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@FieldDefaults(level = AccessLevel.PRIVATE)
 @Entity
 @Table(name = "task")
 public class TaskEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    private Long id;
+    Long id;
 
-    private String name;
+    String name;
 
-    private Instant createdAt = Instant.now();
+    Instant createdAt = Instant.now();
 
-    private String description;
+    String description;
 }

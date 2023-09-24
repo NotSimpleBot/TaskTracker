@@ -1,21 +1,30 @@
 package com.guzanov.crazy_task_tracker.store.entities;
 
+import lombok.*;
+import lombok.experimental.FieldDefaults;
+
 import javax.persistence.*;
 import java.time.Instant;
 import java.util.List;
 
+@Getter
+@Setter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@FieldDefaults(level = AccessLevel.PRIVATE) //?
 @Entity
 @Table(name = "project")
 public class ProjectEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    private Long id;
+    Long id;
 
     @Column(unique = true)
-    private String name;
+    String name;
 
-    private Instant createdAt = Instant.now();
+    Instant createdAt = Instant.now();
 
     @OneToMany
-    private List<TaskStateEntity> taskStateEntityList;
+    List<TaskStateEntity> taskStateEntityList;
 }

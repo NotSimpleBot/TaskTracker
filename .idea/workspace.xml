@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="320829c0-91f1-40b1-9847-218079600ba0" name="Changes" comment="tasker_v0">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guzanov/crazy_task_tracker/store/entities/ProjectEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guzanov/crazy_task_tracker/store/entities/TaskEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guzanov/crazy_task_tracker/store/entities/TaskStateEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-main.yml" afterDir="false" />
+    <list default="true" id="320829c0-91f1-40b1-9847-218079600ba0" name="Changes" comment="tasker_v1 | fix">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guzanov/crazy_task_tracker/store/entities/ProjectEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guzanov/crazy_task_tracker/store/entities/ProjectEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guzanov/crazy_task_tracker/store/entities/TaskEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guzanov/crazy_task_tracker/store/entities/TaskEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guzanov/crazy_task_tracker/store/entities/TaskStateEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guzanov/crazy_task_tracker/store/entities/TaskStateEntity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +80,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1695540089103</updated>
-      <workItem from="1695540090719" duration="9001000" />
+      <workItem from="1695540090719" duration="9310000" />
     </task>
     <task id="LOCAL-00001" summary="tasker_v0">
       <created>1695545500452</created>
@@ -92,7 +89,21 @@
       <option name="project" value="LOCAL" />
       <updated>1695545500452</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="tasker_v1 | создание Сущностей для слоя работы с БД">
+      <created>1695555891303</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1695555891303</updated>
+    </task>
+    <task id="LOCAL-00003" summary="tasker_v1 | fix">
+      <created>1695555961112</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1695555961112</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,7 +122,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="tasker_v0" />
-    <option name="LAST_COMMIT_MESSAGE" value="tasker_v0" />
+    <MESSAGE value="tasker_v1 | создание Сущностей для слоя работы с БД" />
+    <MESSAGE value="tasker_v1 | fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="tasker_v1 | fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
