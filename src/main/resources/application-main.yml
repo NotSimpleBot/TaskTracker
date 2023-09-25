@@ -1,10 +1,15 @@
 server:
   port: 8080
 
+# Коннект до БД
 spring:
   datasource:
     url: jdbc:postgresql://localhost/crazy-task-tracker
     username: postgres
     password: postgres
     driver-class-name: org.postgresql.Driver
+# Автоматическое создание таблиц в БД
+  jpa:
+    hibernate:
+      ddl-auto: update
 
