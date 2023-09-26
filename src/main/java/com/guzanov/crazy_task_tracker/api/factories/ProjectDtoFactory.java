@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * Получаем из табличного представления объекта - DTO представление (чисто данные)
+ * Нужен что бы отдать на клиент не всю сущность, а то, что мы хотим
  */
 @Component
 public class ProjectDtoFactory {
