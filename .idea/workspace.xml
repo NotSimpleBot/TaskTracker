@@ -4,14 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="320829c0-91f1-40b1-9847-218079600ba0" name="Changes" comment="tasker_v1_1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guzanov/crazy_task_tracker/api/exeptions/BadRequestException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guzanov/crazy_task_tracker/api/exeptions/CustomErrorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guzanov/crazy_task_tracker/api/exeptions/CustomExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guzanov/crazy_task_tracker/api/exeptions/ErrorDTO.java" afterDir="false" />
+    <list default="true" id="320829c0-91f1-40b1-9847-218079600ba0" name="Changes" comment="tasker_v1_2">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/guzanov/crazy_task_tracker/api/exeptions/NotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/42010a6f-d444-421a-89d7-544abd4876dc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/42010a6f-d444-421a-89d7-544abd4876dc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/42010a6f-d444-421a-89d7-544abd4876dc/storage_v2/_src_/database/crazy-task-tracker.rA52iQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/42010a6f-d444-421a-89d7-544abd4876dc/storage_v2/_src_/database/crazy-task-tracker.rA52iQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/guzanov/crazy_task_tracker/api/controllers/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guzanov/crazy_task_tracker/api/controllers/ProjectController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guzanov/crazy_task_tracker/api/dto/ProjectDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guzanov/crazy_task_tracker/api/dto/ProjectDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guzanov/crazy_task_tracker/api/exeptions/CustomErrorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guzanov/crazy_task_tracker/api/exeptions/CustomErrorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guzanov/crazy_task_tracker/api/exeptions/CustomExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guzanov/crazy_task_tracker/api/exeptions/CustomExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/guzanov/crazy_task_tracker/api/factories/ProjectDtoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guzanov/crazy_task_tracker/api/factories/ProjectDtoFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guzanov/crazy_task_tracker/store/entities/ProjectEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guzanov/crazy_task_tracker/store/entities/ProjectEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/guzanov/crazy_task_tracker/store/repositories/ProjectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guzanov/crazy_task_tracker/store/repositories/ProjectRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +61,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="HTTP Request.generated-requests | #2">
+  <component name="RunManager" selected="Spring Boot.Application">
     <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" requestIdentifier="#2" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -81,8 +85,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.generated-requests | #2" />
         <item itemvalue="Spring Boot.Application" />
+        <item itemvalue="HTTP Request.generated-requests | #2" />
       </list>
     </recent_temporary>
   </component>
@@ -94,7 +98,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1695540089103</updated>
-      <workItem from="1695540090719" duration="21205000" />
+      <workItem from="1695540090719" duration="32386000" />
     </task>
     <task id="LOCAL-00001" summary="tasker_v0">
       <created>1695545500452</created>
@@ -131,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695657551183</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="tasker_v1_2">
+      <created>1695736601689</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1695736601689</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,7 +165,8 @@
     <MESSAGE value="tasker_v1 | fix" />
     <MESSAGE value="tasker_v1 | переход от типовой реализации геттеров и сеттеров к Lombok" />
     <MESSAGE value="tasker_v1_1" />
-    <option name="LAST_COMMIT_MESSAGE" value="tasker_v1_1" />
+    <MESSAGE value="tasker_v1_2" />
+    <option name="LAST_COMMIT_MESSAGE" value="tasker_v1_2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -165,9 +177,19 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/guzanov/crazy_task_tracker/api/controllers/ProjectController.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/guzanov/crazy_task_tracker/api/exeptions/CustomExceptionHandler.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/guzanov/crazy_task_tracker/api/exeptions/CustomErrorController.java</url>
           <line>30</line>
-          <option name="timeStamp" value="3" />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/guzanov/crazy_task_tracker/api/controllers/ProjectController.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

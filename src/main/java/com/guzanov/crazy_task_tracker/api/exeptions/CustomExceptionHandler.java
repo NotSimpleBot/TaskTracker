@@ -15,7 +15,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 @ControllerAdvice
 public class CustomExceptionHandler extends ResponseEntityExceptionHandler {
 
-    @ExceptionHandler(Exception.class) //все подряд ошибки хватаем
+    @ExceptionHandler(Exception.class) //все подряд ошибки хватаем и оборачиваем в ResponseEntity (что бы передать статус на клиента)
     public ResponseEntity<Object> exception(Exception ex, WebRequest request) throws Exception {
         log.error("Exception asdasdasd", ex);
         return handleException(ex, request);
